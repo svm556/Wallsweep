@@ -2,9 +2,16 @@
 <html>
 <head>
   <title>WallSweep</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to WallSweep</h1>
-  <p>Your content filtering assistant for YouTube, Rumble, and more.</p>
+  <h1>WallSweep</h1>
+  <div class="search-section">
+    <input type="text" id="searchInput" placeholder="Search keyword...">
+    <input type="text" id="excludeInput" placeholder="Exclude keyword...">
+    <button onclick="filterResults()">Search</button>
+  </div>
+  <div id="resultsContainer" class="results"></div>
+  <script src="script.js"></script>
 </body>
 </html>
