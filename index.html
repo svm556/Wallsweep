@@ -8,7 +8,24 @@
   <h1>WallSweep</h1>
   <div class="search-section">
     <input type="text" id="searchInput" placeholder="Search keyword...">
-    <input type="text" id="excludeInput" placeholder="Exclude keyword...">
+    <input type="text" id="excludeInput" placeholder="Exclude keyword..."><br>
+
+    <label for="durationFilter">Video Length:</label>
+    <select id="durationFilter">
+      <option value="all">All</option>
+      <option value="short">Short (0-10 min)</option>
+      <option value="medium">Medium (10-30 min)</option>
+      <option value="long">Long (30+ min)</option>
+    </select>
+
+    <label for="uploadDate">Upload Date:</label>
+    <select id="uploadDate">
+      <option value="all">All time</option>
+      <option value="24h">Last 24 hours</option>
+      <option value="week">This week</option>
+      <option value="month">This month</option>
+    </select><br>
+
     <button onclick="filterResults()">Search</button>
   </div>
   <div id="resultsContainer" class="results"></div>
